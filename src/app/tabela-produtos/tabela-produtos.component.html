@@ -1,0 +1,17 @@
+<h3>{{nomeComponente}}</h3>
+<table *ngIf="produtos.length > 0">
+    <tr>
+        <th>ID</th>
+        <th>NOME</th>
+        <th>MARCA</th>
+        <th>PREÇO</th>
+        <th>VALIDADE</th>
+    </tr>
+    <tr *ngFor="let prod of produtos">
+        <td>{{prod.id}}</td>
+        <td>{{prod.nome}}</td>
+        <td>{{prod.marca}}</td>
+        <td>{{prod.preco}}</td>
+        <td>{{prod.validade}}</td>
+    </tr> 
+</table>

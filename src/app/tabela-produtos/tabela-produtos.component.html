@@ -10,8 +10,8 @@
     <tr *ngFor="let prod of produtos">
         <td>{{prod.id}}</td>
         <td>{{prod.nome}}</td>
-        <td>{{prod.marca}}</td>
-        <td>{{prod.preco}}</td>
-        <td>{{prod.validade}}</td>
+        <td>{{prod.marca | uppercase}}</td>
+        <td>{{prod.preco | currency:'BRL'}}</td>
+        <td>{{prod.validade | date:'dd/MM/yyyy'}}</td>
     </tr> 
 </table>

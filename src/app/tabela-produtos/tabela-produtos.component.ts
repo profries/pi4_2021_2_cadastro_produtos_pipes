@@ -10,6 +10,7 @@ import { ProdutoService } from '../produto.service';
 export class TabelaProdutosComponent implements OnInit {
   @Input('nome') nomeComponente = '';
   produtos: Produto[] = [];
+  nomePesquisado = "";
 
  constructor(private produtoService: ProdutoService) { 
    this.produtos = this.produtoService.getProdutos();

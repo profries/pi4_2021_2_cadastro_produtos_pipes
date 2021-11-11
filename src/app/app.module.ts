@@ -6,13 +6,15 @@ import { TabelaProdutosComponent } from './tabela-produtos/tabela-produtos.compo
 import { FormProdutosComponent } from './form-produtos/form-produtos.component';
 import { FormsModule } from '@angular/forms';
 import { MoedaPipe } from './moeda.pipe';
+import { FiltroPesquisaPipe } from './filtro-pesquisa.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     TabelaProdutosComponent,
     FormProdutosComponent,
-    MoedaPipe
+    MoedaPipe,
+    FiltroPesquisaPipe
   ],
   imports: [
     BrowserModule,
